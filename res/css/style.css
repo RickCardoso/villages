@@ -6383,9 +6383,13 @@ body {
 body {
   background-color: #f3f2f2; }
 
-.app-wrap {
+.app-wrapper {
   max-width: 1920px;
   margin: 2.5em auto; }
+  @media (max-width: 1920px) {
+    .app-wrapper {
+      margin-top: 0;
+      margin-bottom: 0; } }
 
 /* boxes */
 /* buttons */
@@ -6407,10 +6411,64 @@ a {
   transition: all 0.3s; }
 
 /* navigation */
+.app-header .navbar {
+  padding-right: 1.4375em;
+  padding-left: 1.4375em; }
+.app-header a.navbar-brand {
+  margin-right: 0;
+  padding: 8px; }
+  .app-header a.navbar-brand:hover, .app-header a.navbar-brand:focus {
+    opacity: 0.5; }
+.app-header a.nav-link {
+  padding: 8px;
+  margin: auto 0.625em;
+  font-size: 0.875em;
+  font-weight: 600;
+  color: #505050; }
+  .app-header a.nav-link:hover, .app-header a.nav-link:focus {
+    opacity: 0.5; }
+
+#primary-navbar {
+  padding-right: 0.25em; }
+  #primary-navbar .balance-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2em; }
+    #primary-navbar .balance-item a, #primary-navbar .balance-item span {
+      padding-left: 0.25em;
+      display: flex;
+      font-size: 1.3125em;
+      font-weight: 300;
+      color: #505050; }
+    #primary-navbar .balance-item #account-balance {
+      padding-left: 0.625em; }
+    #primary-navbar .balance-item #account-currency {
+      color: #d9d8d8; }
+
+.user-menu {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto; }
+  .user-menu a.user-link {
+    display: flex;
+    margin-left: 2.75em; }
+  .user-menu .avatar-wrapper {
+    background-image: url("../img/user/avatar-border.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0.25em; }
+
 /* headings */
 /* lists */
 /* text */
 /* header */
+.app-header {
+  background-color: #fff; }
+
 /* home */
 
 /*# sourceMappingURL=style.css.map */

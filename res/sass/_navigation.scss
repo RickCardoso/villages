@@ -1,1 +1,69 @@
 /* navigation */
+.app-header {
+  & .navbar {
+    padding-right: 1.4375em;
+    padding-left: 1.4375em;
+  }
+  & a.navbar-brand {
+    margin-right: 0;
+    padding: 8px;
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+  & a.nav-link {
+    padding: 8px;
+    margin: auto 0.625em;
+    font-size: 0.875em;
+    font-weight: 600;
+    color: #505050;
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}
+
+#primary-navbar {
+  padding-right: 0.25em;
+  & .balance-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2em;
+    & a,
+    & span {
+      padding-left: 0.25em;
+      display: flex;
+      font-size: 1.3125em;
+      font-weight: 300;
+      color: #505050;
+    }
+    & #account-balance {
+      padding-left: 0.625em;
+    }
+    & #account-currency {
+      color: #d9d8d8;
+    }
+  }
+}
+
+.user-menu {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  & a.user-link {
+    display: flex;
+    margin-left: 2.75em;
+  }
+  & .avatar-wrapper {
+    background-image: url('../img/user/avatar-border.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0.25em;
+  }
+}

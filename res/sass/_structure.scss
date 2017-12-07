@@ -3,7 +3,11 @@ body {
   background-color: #f3f2f2;
 }
 
-.app-wrap { // centralisation container
+.app-wrapper { // centralisation container
   max-width: 1920px;
   margin: 2.5em auto;
+  @include media-width-down(1920px) {
+    margin-top: 0;
+    margin-bottom: 0;
+  };
 }

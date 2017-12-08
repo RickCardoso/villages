@@ -6430,10 +6430,15 @@ a {
 
 #primary-navbar {
   padding-right: 0.25em; }
+  #primary-navbar .dropdown-menu {
+    font-size: 0.875em; }
+    #primary-navbar .dropdown-menu .dropdown-item {
+      padding: 0.25em 1.25em; }
   #primary-navbar .balance-item {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-right: 2.5em;
     padding-left: 2em; }
     #primary-navbar .balance-item a, #primary-navbar .balance-item span {
       padding-left: 0.25em;
@@ -6455,6 +6460,8 @@ a {
   .user-menu a.user-link {
     display: flex;
     margin-left: 2.75em; }
+    .user-menu a.user-link:hover, .user-menu a.user-link:focus {
+      opacity: 0.5; }
   .user-menu .avatar-wrapper {
     background-image: url("../img/user/avatar-border.png");
     background-repeat: no-repeat;
@@ -6462,12 +6469,53 @@ a {
     background-position: center;
     padding: 0.25em; }
 
+.cat-menu .cat-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row;
+  width: 100%;
+  padding: 2em 3em;
+  background-blend-mode: multiply;
+  border-bottom: 1px solid rgba(29, 144, 181, 0.2); }
+  .cat-menu .cat-item .cat-item-icon {
+    display: flex;
+    width: 2.25em; }
+    .cat-menu .cat-item .cat-item-icon img {
+      width: auto; }
+  .cat-menu .cat-item .cat-item-name {
+    font-size: 1.125em;
+    color: #fff;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+  .cat-menu .cat-item:hover, .cat-menu .cat-item:focus {
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.1); }
+    .cat-menu .cat-item:hover .cat-item-name, .cat-menu .cat-item:focus .cat-item-name {
+      color: #76c9e4; }
+
 /* headings */
 /* lists */
 /* text */
 /* header */
 .app-header {
   background-color: #fff; }
+
+.app-view {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap; }
+
+.app-sidebar {
+  background-color: #085973;
+  flex: 0 0 294px; }
+
+.app-main {
+  flex: 1; }
 
 /* home */
 

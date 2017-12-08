@@ -2,3 +2,19 @@
 .app-header {
   background-color: #fff;
 }
+
+.app-view {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-flow: row wrap;
+}
+
+.app-sidebar {
+  background-color: #085973;
+  flex: 0 0 294px;
+}
+
+.app-main {
+  flex: 1;
+}

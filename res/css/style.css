@@ -6406,6 +6406,8 @@ body {
   border-radius: 50%;
   width: 4.8125em;
   height: 4.8125em; }
+  .avatar-wrapper img {
+    max-width: 100%; }
   .avatar-wrapper.blue {
     border-color: #1d90b5; }
 
@@ -6768,7 +6770,9 @@ a {
   @media (max-width: 575px) {
     .search-results {
       padding-right: 15px;
-      padding-left: 15px; } }
+      padding-left: 15px; }
+      .search-results div[class*="col"] {
+        padding-bottom: 15px; } }
 
 .post-box {
   background-color: #fff;
@@ -6857,16 +6861,17 @@ a {
 
 .person-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
   background-color: #fff;
-  padding: 12px 21px;
+  padding: 12px 1.3125em;
   -webkit-box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.06);
   -moz-box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.06);
   box-shadow: 0 0 16px 0 rgba(119, 119, 119, 0.06); }
   .person-box .person-id {
-    flex: 0 0 12em;
+    flex: 0 0 13.5em;
+    padding-right: 1em;
     padding-left: 1em; }
     .person-box .person-id h1 {
       margin-bottom: 0.125em;
@@ -6874,18 +6879,96 @@ a {
       font-weight: 300;
       color: #8d8d8d; }
     .person-box .person-id .tag {
-      font-size: 0.6875em; }
+      font-size: 0.6875rem; }
   .person-box .price-container {
-    flex: 0 0 8em;
-    padding-right: 1em;
+    flex: 0 0 10.5em;
+    padding-right: 1.5em;
     padding-left: 1em; }
+    .person-box .price-container span {
+      font-size: 1.125em;
+      font-weight: 300; }
+    .person-box .price-container img {
+      margin: auto 0.5em;
+      vertical-align: text-top; }
   .person-box .like-container {
-    flex: 0 0 7em; }
+    flex: 0 0 11.5em;
+    padding-right: 1.5em;
+    padding-left: 1em; }
+    .person-box .like-container span {
+      font-size: 1.125em;
+      font-weight: 300; }
+    .person-box .like-container img {
+      margin: auto 0.5em;
+      vertical-align: text-top; }
   .person-box .location-container {
-    flex: 0 0 13em; }
+    flex: 0 0 17em;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 1.5em;
+    padding-left: 1em; }
+    .person-box .location-container span {
+      font-size: 1.125em;
+      font-weight: 300; }
+    .person-box .location-container img {
+      margin: auto 0.5em;
+      vertical-align: text-top; }
   .person-box .date-container {
-    flex: 0 0 6em; }
+    flex: 0 0 12em;
+    padding-right: 1.5em;
+    padding-left: 1em; }
+    .person-box .date-container span {
+      font-size: 1.125em;
+      font-weight: 300; }
+    .person-box .date-container img {
+      margin: auto 0.5em;
+      vertical-align: text-top; }
   .person-box .person-action {
-    flex: 0 0 10em; }
+    flex: 0 0 15em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .person-box .person-action .action-menu-item {
+      flex: 0 0 33%;
+      text-align: center; }
+      .person-box .person-action .action-menu-item:hover, .person-box .person-action .action-menu-item:focus {
+        background-color: #e6e6e6; }
+  @media (max-width: 991px) {
+    .person-box .person-id {
+      flex: 1 1 auto; }
+    .person-box .price-container {
+      flex: 0 0 60%;
+      padding: 1.5em 0.25em 1em; }
+    .person-box .like-container {
+      flex: 0 0 40%;
+      padding: 1.5em 0.25em 1em; }
+    .person-box .location-container {
+      flex: 0 0 60%;
+      padding: 1em 0.25em; }
+    .person-box .date-container {
+      flex: 0 0 40%;
+      padding: 1em 0.25em; }
+    .person-box .person-action {
+      flex: 0 0 100%;
+      padding: 1em 0.25em;
+      border-top: 1px solid #e1e1e1; }
+      .person-box .person-action .action-menu-item {
+        padding: 0.625em 0 0.75em; } }
+  @media (max-width: 767px) {
+    .person-box {
+      font-size: 0.9em; } }
+  @media (max-width: 575px) {
+    .person-box {
+      padding: 1.25em 1em 0.75em;
+      font-size: 0.8em; } }
+  @media (max-width: 413px) {
+    .person-box .price-container {
+      flex: 0 0 50%; }
+    .person-box .like-container {
+      flex: 0 0 50%; }
+    .person-box .location-container {
+      flex: 0 0 100%; }
+    .person-box .date-container {
+      flex: 0 0 100%;
+      padding: 1em 0 2em; } }
 
 /*# sourceMappingURL=style.css.map */

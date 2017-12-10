@@ -1,1 +1,8 @@
 /* boxes */
+.avatar-wrapper {
+  border: 4px solid #fff;
+  @include crossBorder(50%);
+  &.blue {
+    border-color: #1d90b5;
+  }
+}

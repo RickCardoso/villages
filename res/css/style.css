@@ -6399,6 +6399,16 @@ body {
   overflow: auto; }
 
 /* boxes */
+.avatar-wrapper {
+  border: 4px solid #fff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  display: flex;
+  }
+  .avatar-wrapper.blue {
+    border-color: #1d90b5; }
+
 /* buttons */
 .btn-std {
   -webkit-transition: all 0.3s;

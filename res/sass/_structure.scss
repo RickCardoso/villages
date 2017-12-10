@@ -11,3 +11,12 @@ body {
     margin-bottom: 0;
   };
 }
+
+.app-view {
+  height: 900px;
+}
+
+.app-main {
+  height: 100%;
+  overflow: auto;
+}

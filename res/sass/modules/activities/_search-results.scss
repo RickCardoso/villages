@@ -1,0 +1,108 @@
+/* search-results */
+.search-results {
+  @include make-container;
+  padding: 38px 30px 10px;
+  & div[class*="col"] {
+    padding-bottom: 30px;
+  }
+  @include media-width-down(xs) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+.post-box {
+  background-color: #fff;
+  @include crossShadow(0 0 16px 0 rgba(119, 119, 119, 0.29));
+  & .post-cover {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-bottom: 39.07%;
+    & .type,
+    & .price {
+      position: absolute;
+      left: 1rem;
+      color: #fff;
+      text-transform: uppercase;
+    }
+    & .type {
+      top: 0.875em;
+      font-size: 0.9375em;
+    }
+    & .price {
+      top: 1.3125em;
+      font-size: 1.4375em;
+    }
+    & .bookmark {
+      position: absolute;
+      top: -0.5em;
+      right: 1em;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 2.5em;
+      padding-top: 2.9375em;
+      &.bookmarked {
+        background-image: url('../img/icons/bookmark.png');
+      }
+    }
+  }
+  & .post-content {
+    position: relative;
+    text-align: center;
+    padding: 4em 7% 1.5em;
+    & .avatar-thumbnail {
+      position: absolute;
+      top: -1.5em;
+      left: 50%;
+      width: 68px;
+      height: 68px;
+      border: 4px solid #fff;
+      @include crossBorder(50%);
+      @include crossTransform(translateX(-50%));
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      & .trusted-icon {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+    }
+    & h1 {
+      font-size: 1.4375em;
+      font-weight: 300;
+      color: #8d8d8d;
+    }
+    & p {
+      font-size: 0.75em;
+      font-weight: 300;
+      color: #5c5c5c;
+    }
+    & .tag {
+      font-size: 0.6875em;
+    }
+  }
+  & .post-action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-top: 1px solid #f3f2f2;
+    & .action-menu-item {
+      flex: 0 0 33.333%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 3.5em;
+      &:not(:first-of-type) {
+        border-left: 1px solid #f3f2f2;
+      }
+      &:hover,
+      &:focus {
+        background-color: darken(#fff, 10%);
+      }
+    }
+  }
+}

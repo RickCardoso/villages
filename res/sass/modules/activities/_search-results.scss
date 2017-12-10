@@ -106,3 +106,49 @@
     }
   }
 }
+
+.person-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #fff;
+  padding: 12px 21px;
+  @include crossShadow(0 0 16px 0 rgba(119, 119, 119, 0.06));
+
+  & .person-id {
+    flex: 0 0 12em;
+    padding-left: 1em;
+    & h1 {
+      margin-bottom: 0.125em;
+      font-size: 1.4375em;
+      font-weight: 300;
+      color: #8d8d8d;
+    }
+    & .tag {
+      font-size: 0.6875em;
+    }
+  }
+
+  & .price-container {
+    flex: 0 0 8em;
+    padding-right: 1em;
+    padding-left: 1em;
+  }
+
+  & .like-container {
+    flex: 0 0 7em;
+  }
+
+  & .location-container {
+    flex: 0 0 13em;
+  }
+
+  & .date-container {
+    flex: 0 0 6em;
+  }
+
+  & .person-action {
+    flex: 0 0 10em;
+  }
+}

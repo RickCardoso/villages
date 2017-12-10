@@ -6814,7 +6814,7 @@ a {
       transform: translateX(-50%);
       background-position: center;
       background-repeat: no-repeat;
-      background-size: cover; }
+      background-size: auto; }
       .post-box .post-content .avatar-thumbnail .trusted-icon {
         position: absolute;
         bottom: 0;

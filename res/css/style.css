@@ -6929,18 +6929,36 @@ a {
     align-items: center; }
     .person-box .person-action .action-menu-item {
       flex: 0 0 33%;
-      text-align: center; }
+      text-align: center;
+      padding: 0.625em 0 0.75em; }
       .person-box .person-action .action-menu-item:hover, .person-box .person-action .action-menu-item:focus {
         background-color: #e6e6e6; }
+  @media (max-width: 1599px) {
+    .person-box .person-id {
+      flex: 1 0 auto; }
+    .person-box .location-container {
+      flex: 1 0 auto;
+      padding: 2em 0.25em; }
+    .person-box .date-container {
+      padding: 2em 0.25em; } }
+  @media (max-width: 1199px) {
+    .person-box .price-container {
+      flex: 0 0 25%;
+      padding: 1.5em 0.25em 1em; }
+    .person-box .like-container {
+      flex: 0 0 25%;
+      padding: 1.5em 0.25em 1em; }
+    .person-box .location-container {
+      flex: 1 0 auto; }
+    .person-box .date-container {
+      flex: 0 0 25%; } }
   @media (max-width: 991px) {
     .person-box .person-id {
       flex: 1 1 auto; }
     .person-box .price-container {
-      flex: 0 0 60%;
-      padding: 1.5em 0.25em 1em; }
+      flex: 0 0 60%; }
     .person-box .like-container {
-      flex: 0 0 40%;
-      padding: 1.5em 0.25em 1em; }
+      flex: 0 0 40%; }
     .person-box .location-container {
       flex: 0 0 60%;
       padding: 1em 0.25em; }
@@ -6950,9 +6968,7 @@ a {
     .person-box .person-action {
       flex: 0 0 100%;
       padding: 1em 0.25em;
-      border-top: 1px solid #e1e1e1; }
-      .person-box .person-action .action-menu-item {
-        padding: 0.625em 0 0.75em; } }
+      border-top: 1px solid #e1e1e1; } }
   @media (max-width: 767px) {
     .person-box {
       font-size: 0.9em; } }

@@ -200,6 +200,7 @@
     & .action-menu-item {
       flex: 0 0 33%;
       text-align: center;
+      padding: 0.625em 0 0.75em;
       &:hover,
       &:focus {
         background-color: darken(#fff, 10%);
@@ -207,9 +208,33 @@
     }
   }
 
-  @include media-width-down(lg) {
+  @include media-width-down(xl) {
     & .person-id {
-      // flex: 1;
+      flex: 1 0 auto;
+    }
+    & .location-container {
+      flex: 1 0 auto;
+      padding: 2em 0.25em;
+    }
+    & .date-container {
+      padding: 2em 0.25em;
+    }
+  }
+
+  @include media-width-down(lg) {
+    & .price-container {
+      flex: 0 0 25%;
+      padding: 1.5em 0.25em 1em;
+    }
+    & .like-container {
+      flex: 0 0 25%;
+      padding: 1.5em 0.25em 1em;
+    }
+    & .location-container {
+      flex: 1 0 auto;
+    }
+    & .date-container {
+      flex: 0 0 25%;
     }
   }
 
@@ -219,11 +244,9 @@
     }
     & .price-container {
       flex: 0 0 60%;
-      padding: 1.5em 0.25em 1em;
     }
     & .like-container {
       flex: 0 0 40%;
-      padding: 1.5em 0.25em 1em;
     }
     & .location-container {
       flex: 0 0 60%;
@@ -237,9 +260,6 @@
       flex: 0 0 100%;
       padding: 1em 0.25em;
       border-top: 1px solid #e1e1e1;
-      & .action-menu-item {
-        padding: 0.625em 0 0.75em;
-      }
     }
   }
 

@@ -1,13 +1,11 @@
 /* search-results */
 .search-results {
   @include make-container;
-  padding: 38px 30px 10px;
+  padding: 38px 0 10px;
   & div[class*="col"] {
     padding-bottom: 30px;
   }
   @include media-width-down(xs) {
-    padding-right: 15px;
-    padding-left: 15px;
     & div[class*="col"] {
       padding-bottom: 15px;
     }

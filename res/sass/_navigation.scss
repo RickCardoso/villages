@@ -180,3 +180,32 @@
     }
   }
 }
+
+ol.custom-breadcrumbs {
+  background-color: transparent;
+  padding: 0;
+  & li.breadcrumb-item {
+    font-size: 0.875em;
+    text-transform: uppercase;
+    & a {
+      color: #cbcbcb;
+      &:hover,
+      &:focus {
+        color: #76c9e4;
+        text-decoration: none;
+      }
+    }
+    &.active {
+      color: #878787;
+    }
+    & + li.breadcrumb-item {
+      &:before {
+        content: '>';
+        color: #cbcbcb;
+      }
+    }
+  }
+  @include media-width-down(xs) {
+    font-size: 0.8em;
+  }
+}

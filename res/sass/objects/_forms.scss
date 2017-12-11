@@ -1,14 +1,10 @@
 /* forms */
 form.form-container {
   @include make-container;
-  padding: 25px 30px 10px;
+  padding: 0 0 10px;
   border-bottom: 1px solid #ebebeb;
   & div[class*="col"] {
     padding-bottom: 28px;
-  }
-  @include media-width-down(xs) {
-    padding-right: 15px;
-    padding-left: 15px;
   }
 }
 

@@ -8,6 +8,9 @@
   @include media-width-down(xs) {
     padding-right: 15px;
     padding-left: 15px;
+    & div[class*="col"] {
+      padding-bottom: 15px;
+    }
   }
 }
 
@@ -105,4 +108,184 @@
       }
     }
   }
+}
+
+.person-box {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #fff;
+  padding: 12px 1.3125em;
+  @include crossShadow(0 0 16px 0 rgba(119, 119, 119, 0.06));
+
+  & .person-id {
+    flex: 0 0 13.5em;
+    padding-right: 1em;
+    padding-left: 1em;
+    & h1 {
+      margin-bottom: 0.125em;
+      font-size: 1.4375em;
+      font-weight: 300;
+      color: #8d8d8d;
+    }
+    & .tag {
+      font-size: 0.6875rem;
+    }
+  }
+
+  & .price-container {
+    flex: 0 0 10.5em;
+    padding-right: 1.5em;
+    padding-left: 1em;
+    & span {
+      font-size: 1.125em;
+      font-weight: 300;
+    }
+    & img {
+      margin: auto 0.5em;
+      vertical-align: text-top;
+    }
+  }
+
+  & .like-container {
+    flex: 0 0 11.5em;
+    padding-right: 1.5em;
+    padding-left: 1em;
+    & span {
+      font-size: 1.125em;
+      font-weight: 300;
+    }
+    & img {
+      margin: auto 0.5em;
+      vertical-align: text-top;
+    }
+  }
+
+  & .location-container {
+    flex: 0 0 17em;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 1.5em;
+    padding-left: 1em;
+    & span {
+      font-size: 1.125em;
+      font-weight: 300;
+    }
+    & img {
+      margin: auto 0.5em;
+      vertical-align: text-top;
+    }
+  }
+
+  & .date-container {
+    flex: 0 0 12em;
+    padding-right: 1.5em;
+    padding-left: 1em;
+    & span {
+      font-size: 1.125em;
+      font-weight: 300;
+    }
+    & img {
+      margin: auto 0.5em;
+      vertical-align: text-top;
+    }
+  }
+
+  & .person-action {
+    flex: 0 0 15em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & .action-menu-item {
+      flex: 0 0 33%;
+      text-align: center;
+      padding: 0.625em 0 0.75em;
+      &:hover,
+      &:focus {
+        background-color: darken(#fff, 10%);
+      }
+    }
+  }
+
+  @include media-width-down(xl) {
+    & .person-id {
+      flex: 1 0 auto;
+    }
+    & .location-container {
+      flex: 1 0 auto;
+      padding: 2em 0.25em;
+    }
+    & .date-container {
+      padding: 2em 0.25em;
+    }
+  }
+
+  @include media-width-down(lg) {
+    & .price-container {
+      flex: 0 0 25%;
+      padding: 1.5em 0.25em 1em;
+    }
+    & .like-container {
+      flex: 0 0 25%;
+      padding: 1.5em 0.25em 1em;
+    }
+    & .location-container {
+      flex: 1 0 auto;
+    }
+    & .date-container {
+      flex: 0 0 25%;
+    }
+  }
+
+  @include media-width-down(md) {
+    & .person-id {
+      flex: 1 1 auto;
+    }
+    & .price-container {
+      flex: 0 0 60%;
+    }
+    & .like-container {
+      flex: 0 0 40%;
+    }
+    & .location-container {
+      flex: 0 0 60%;
+      padding: 1em 0.25em;
+    }
+    & .date-container {
+      flex: 0 0 40%;
+      padding: 1em 0.25em;
+    }
+    & .person-action {
+      flex: 0 0 100%;
+      padding: 1em 0.25em;
+      border-top: 1px solid #e1e1e1;
+    }
+  }
+
+  @include media-width-down(sm) {
+    font-size: 0.9em;
+  }
+
+  @include media-width-down(xs) {
+    padding: 1.25em 1em 0.75em;
+    font-size: 0.8em;
+  }
+
+  @include media-width-down(xxs) {
+    & .price-container {
+      flex: 0 0 50%;
+    }
+    & .like-container {
+      flex: 0 0 50%;
+    }
+    & .location-container {
+      flex: 0 0 100%;
+    }
+    & .date-container {
+      flex: 0 0 100%;
+      padding: 1em 0 2em;
+    }
+  }
+
 }

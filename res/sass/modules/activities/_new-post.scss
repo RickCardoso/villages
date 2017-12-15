@@ -1,0 +1,48 @@
+#new-post-modal {
+  & .modal-dialog {
+    max-width: 1290px;
+    width: 100%;
+    padding-left: 17px;
+    & .modal-content {
+      background-color: #f9f9f9;
+      @include crossBorder(2px);
+      & .modal-header {
+        border-bottom: none;
+        padding: 22px 30px;
+        & .close {
+          padding: 8px;
+          margin: -2px -8px 0 auto;
+        }
+        & h5 {
+          font-size: 1.875em;
+          font-weight: 300;
+          color: #8d8d8d;
+        }
+      }
+      & .modal-body {
+        padding: 30px;
+        & label {
+          margin-top: 1em;
+          font-size: 1.375em;
+          font-weight: 600;
+          color: #1d90b5;
+        }
+        & input,
+        & select,
+        & textarea {
+          font-size: 1.375em;
+          font-weight: 300;
+          height: 3.18181818em;
+        }
+        & textarea {
+          padding: 0.875em 0.75em;
+        }
+      }
+    }
+  }
+  @include media-width-down(xs) {
+    & .modal-dialog {
+      padding-left: 0;
+    }
+  }
+}

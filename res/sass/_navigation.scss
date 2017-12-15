@@ -32,7 +32,9 @@
       max-width: 5em;
     }
   }
-  & a.nav-link {
+  & .nav-link {
+    -webkit-appearance: none;
+    cursor: pointer;
     padding: 8px;
     margin: auto 0.625em;
     font-size: 0.875em;

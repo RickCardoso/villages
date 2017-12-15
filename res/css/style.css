@@ -6456,7 +6456,6 @@ textarea,
   -o-transition: all 0.3s;
   transition: all 0.3s; }
 
-button,
 input[type="submit"] {
   font-size: 1em;
   color: #fff;
@@ -6466,9 +6465,7 @@ input[type="submit"] {
   -moz-transition: background-color 0.3s;
   -o-transition: background-color 0.3s;
   transition: background-color 0.3s; }
-  button:hover, button:focus,
-  input[type="submit"]:hover,
-  input[type="submit"]:focus {
+  input[type="submit"]:hover, input[type="submit"]:focus {
     background-color: #166d89; }
 
 .custom-group {
@@ -6597,16 +6594,18 @@ a {
   @media (max-width: 575px) {
     .app-header a.navbar-brand {
       max-width: 5em; } }
-.app-header a.nav-link {
+.app-header .nav-link {
+  -webkit-appearance: none;
+  cursor: pointer;
   padding: 8px;
   margin: auto 0.625em;
   font-size: 0.875em;
   font-weight: 600;
   color: #505050; }
-  .app-header a.nav-link:hover, .app-header a.nav-link:focus {
+  .app-header .nav-link:hover, .app-header .nav-link:focus {
     opacity: 0.5; }
   @media (max-width: 991px) {
-    .app-header a.nav-link {
+    .app-header .nav-link {
       margin: 0;
       text-align: center; } }
 .app-header .custom-toggler {
@@ -7085,5 +7084,41 @@ ol.custom-breadcrumbs {
       font-size: 0.8em; }
       .trust-box .trust-box-item.name {
         flex: 0 0 auto; } }
+
+#new-post-modal .modal-dialog {
+  max-width: 1290px;
+  width: 100%;
+  padding-left: 17px; }
+  #new-post-modal .modal-dialog .modal-content {
+    background-color: #f9f9f9;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px; }
+    #new-post-modal .modal-dialog .modal-content .modal-header {
+      border-bottom: none;
+      padding: 22px 30px; }
+      #new-post-modal .modal-dialog .modal-content .modal-header .close {
+        padding: 8px;
+        margin: -2px -8px 0 auto; }
+      #new-post-modal .modal-dialog .modal-content .modal-header h5 {
+        font-size: 1.875em;
+        font-weight: 300;
+        color: #8d8d8d; }
+    #new-post-modal .modal-dialog .modal-content .modal-body {
+      padding: 30px; }
+      #new-post-modal .modal-dialog .modal-content .modal-body label {
+        margin-top: 1em;
+        font-size: 1.375em;
+        font-weight: 600;
+        color: #1d90b5; }
+      #new-post-modal .modal-dialog .modal-content .modal-body input, #new-post-modal .modal-dialog .modal-content .modal-body select, #new-post-modal .modal-dialog .modal-content .modal-body textarea {
+        font-size: 1.375em;
+        font-weight: 300;
+        height: 3.18181818em; }
+      #new-post-modal .modal-dialog .modal-content .modal-body textarea {
+        padding: 0.875em 0.75em; }
+@media (max-width: 575px) {
+  #new-post-modal .modal-dialog {
+    padding-left: 0; } }
 
 /*# sourceMappingURL=style.css.map */

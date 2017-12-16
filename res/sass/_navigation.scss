@@ -113,16 +113,8 @@
     }
   }
   & .avatar-wrapper {
-    background-image: url('../img/user/avatar-border.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 0.25em;
     width: 3.75em;
     height: 3.75em;
-    & img {
-      max-width: 100%;
-    }
   }
 }
 

@@ -21,11 +21,23 @@
       }
       & .modal-body {
         padding: 30px;
-        & label {
+        & label.inline {
+          text-decoration: underline;
+          cursor: pointer;
+          @include crossTransition(color .3s);
+          &:hover {
+            color: #1d90b5;
+          }
+        }
+        & label:not(.inline) {
           margin-top: 1em;
           font-size: 1.375em;
           font-weight: 600;
           color: #1d90b5;
+          &.switch {
+            margin-top: 0;
+            margin-bottom: 0;
+          }            
         }
         & input,
         & select,
@@ -34,8 +46,54 @@
           font-weight: 300;
           height: 3.18181818em;
         }
+        & #price {
+          width: auto;
+        }
+        & .currency-wrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          background-color: #e1e1e1;
+          font-size: 1.375em;
+          font-weight: 600;
+          color: #8d8d8d;
+        }
         & textarea {
           padding: 0.875em 0.75em;
+          height: 9.2375em;
+        }
+        & .drag-and-drop-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-flow: row wrap;
+          padding: 2.1875em 0;
+          border: 3px dashed #919191;
+          text-align: center;
+          @include crossBorder(10px);
+          & input {
+            display: none;
+          }
+          & img {
+            display: flex;
+          }
+          & p {
+            margin-bottom: 0;
+            font-size: 1.125em;
+            color: #b0b0b0;
+            flex: 0 0 100%;
+          }
+          & .action-call {
+            margin-top: 0.5em;
+            font-size: 1.375em;
+            font-weight: 700;
+            color: #8c99a5;
+            text-transform: uppercase;
+          }
+          & label {
+            color: #8c99a5;
+          }
         }
       }
     }

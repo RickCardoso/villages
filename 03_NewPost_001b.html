@@ -63,19 +63,22 @@
                 <label for="title">Title</label>
                 <input type="text" name="title" id="title" placeholder="Lorem Ipsum">
                 <label for="price">Price (in Village Hours)</label>
-                <input type="number" name="price" id="price" placeholder="Lorem Ipsum">
-                <span class="currency-wrapper">V.H.</span>
+                <div class="d-flex">
+                  <input type="number" name="price" id="price" placeholder="Lorem Ipsum">
+                  <span class="currency-wrapper">V.H.</span>
+                </div>
               </div>
               <div class="col-5">
                 <label for="description">Description</label>
                 <textarea name="description" id="description" cols="30" rows="10" placeholder="Lorem Ipsum"></textarea>
               </div>
               <div class="col-3">
+                <label>&nbsp;</label>
                 <div class="drag-and-drop-container">
                   <input type="file" name="photo" id="photo">
                   <img src="res/img/icons/camera.png" alt="photo">
-                  <p>drag &amp; drop</p>
-                  <p>your photos, or <label for="photo">browse</label></p>
+                  <p class="action-call">drag &amp; drop</p>
+                  <p>your photos, or <label class="inline" for="photo">browse</label></p>
                 </div>
               </div>
             </div>
@@ -85,8 +88,15 @@
                 <input type="text" name="tags" id="tags">
               </div>
               <div class="col-2">
-                <label for="visibility">Visibility</label>
-                <input type="checkbox" id="visibility">
+                <label>Visibility</label>
+                <div class="d-flex justify-content-center align-items-center mt-3">
+                  <span>Public</span>
+                  <label class="switch mx-2">
+                    <input id="visibility" type="checkbox" checked>
+                    <span class="slider round"></span>
+                  </label>
+                  <span>Private</span>
+                </div>
               </div>
               <div class="col-3">
                 <label>&nbsp;</label>
@@ -112,7 +122,7 @@
         <div class="user-menu d-flex d-lg-none">
           <a class="user-link" href="#"><img src="res/img/icons/bell.png" alt="notifications"></a>
           <a class="user-link" href="#">
-            <div class="avatar-wrapper">
+            <div class="avatar-wrapper blue">
               <img src="res/img/user/avatar.png" alt="avatar">
             </div>
           </a>
@@ -158,7 +168,7 @@
         <div class="user-menu d-none d-lg-flex">
           <a class="user-link" href="#"><img src="res/img/icons/bell.png" alt="notifications"></a>
           <a class="user-link" href="#">
-            <div class="avatar-wrapper">
+            <div class="avatar-wrapper blue">
               <img src="res/img/user/avatar.png" alt="avatar">
             </div>
           </a>
@@ -196,6 +206,14 @@
             </div>
             <span class="cat-item-name">Housing</span>
           </a>
+        </div>
+
+        <div class="social-menu">
+
+          <a class="social-link" href="#"><img src="res/img/icons/instagram.png" alt="instagram"></a>
+          <a class="social-link" href="#"><img src="res/img/icons/facebook.png" alt="facebook"></a>
+          <a class="social-link" href="#"><img src="res/img/icons/twitter.png" alt="twitter"></a>
+
         </div>
 
       </aside>

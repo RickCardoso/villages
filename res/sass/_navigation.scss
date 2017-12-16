@@ -32,7 +32,9 @@
       max-width: 5em;
     }
   }
-  & a.nav-link {
+  & .nav-link {
+    -webkit-appearance: none;
+    cursor: pointer;
     padding: 8px;
     margin: auto 0.625em;
     font-size: 0.875em;
@@ -111,16 +113,8 @@
     }
   }
   & .avatar-wrapper {
-    background-image: url('../img/user/avatar-border.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 0.25em;
     width: 3.75em;
     height: 3.75em;
-    & img {
-      max-width: 100%;
-    }
   }
 }
 

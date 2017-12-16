@@ -7263,6 +7263,15 @@ ol.custom-breadcrumbs {
           text-transform: uppercase; }
         #new-post-modal .modal-dialog .modal-content .modal-body .drag-and-drop-container label {
           color: #8c99a5; }
+@media (max-width: 1599px) {
+  #new-post-modal {
+    font-size: 0.9em; } }
+@media (max-width: 1199px) {
+  #new-post-modal {
+    font-size: 0.8em; } }
+@media (max-width: 991px) {
+  #new-post-modal {
+    font-size: 0.7em; } }
 @media (max-width: 575px) {
   #new-post-modal .modal-dialog {
     padding-left: 0; } }

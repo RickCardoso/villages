@@ -98,6 +98,17 @@
       }
     }
   }
+  @include media-width-down(xl) {
+    font-size: 0.9em;
+  }
+  @include media-width-down(lg) {
+    font-size: 0.8em;
+  }
+  @include media-width-down(md) {
+    font-size: 0.7em;
+  }
+  @include media-width-down(sm) {
+  }
   @include media-width-down(xs) {
     & .modal-dialog {
       padding-left: 0;

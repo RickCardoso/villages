@@ -14,6 +14,7 @@
   }
   @include media-width-down(sm) {
     flex: 0 0 auto;
+    max-width: 100%;
   }
   @include media-width-down(xs) {
     height: auto;

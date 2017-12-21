@@ -20,3 +20,43 @@ input[type="submit"] {
 		border-color: $color__border-button-focus;
 	}
 }
+
+.btn-std {
+	@include crossTransition(all .3s);
+	@include crossBorder(2px);
+	font-size: 0.875rem;
+	font-size: 600;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+
+.btn-blue {
+	background-color: #1d90b5;
+	border: 2px solid #1d90b5;
+	color: #fff;
+	&:hover,
+	&:focus {
+		background-color: darken($color: #1d90b5, $amount: 10%);
+		border-color: darken($color: #1d90b5, $amount: 10%);
+		color: #fff;
+	}
+	&.outline {
+		background-color: transparent;
+		color: #1d90b5;
+		&:hover,
+		&:focus {
+			background-color: rgba(0, 0, 0, .1);
+			border-color: darken($color: #1d90b5, $amount: 10%);
+			color: #1d90b5;
+		}
+	}
+	
+}

@@ -45,6 +45,7 @@ if ( ! function_exists( 'villages_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'villages' ),
+			'menu-2' => esc_html__( 'Social', 'villages' ),
 		) );
 
 		/*
@@ -122,6 +123,26 @@ function villages_scripts() {
 	wp_enqueue_script( 'villages-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'villages-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
+
+	/* jQuery */
+	wp_deregister_script('jquery');
+	wp_enqueue_script( 'jquery', get_template_directory_uri() . '/ext-res/jquery/jquery-3.2.1.js', array(), '3.2.1', true );
+
+	/* Popper.js */
+	wp_enqueue_script( 'popper', get_template_directory_uri() . '/ext-res/popper/popper.js', array(), '1.12.5', true );
+
+	/* Bootstrap */
+	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/ext-res/bootstrap/js/bootstrap.js', array(), '4.0.0-beta', true );
+
+	/* Font-Awesome */
+	wp_enqueue_script( 'font-awesome-brands', get_template_directory_uri() . '/ext-res/font-awesome/packs/brands.js', array(), '5.0', true );
+	wp_enqueue_script( 'font-awesome-light', get_template_directory_uri() . '/ext-res/font-awesome/packs/light.js', array(), '5.0', true );
+	wp_enqueue_script( 'font-awesome-regular', get_template_directory_uri() . '/ext-res/font-awesome/packs/regular.js', array(), '5.0', true );
+	wp_enqueue_script( 'font-awesome-solid', get_template_directory_uri() . '/ext-res/font-awesome/packs/solid.js', array(), '5.0', true );
+	wp_enqueue_script( 'font-awesome', get_template_directory_uri() . '/ext-res/font-awesome/fontawesome.js', array(), '5.0', true );
+
+	/* Custom jQuery */
+	wp_enqueue_script( 'iccube-jquery', get_template_directory_uri() . '/js/app.js', array('jquery'), '1.0.0', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

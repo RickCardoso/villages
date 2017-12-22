@@ -36,6 +36,27 @@ input[type="submit"] {
 	&:focus {
 		outline: none;
 	}
+	position: relative;
+	overflow: hidden;
+	& .left-triangle,
+	& .right-triangle {
+		position: absolute;
+		top: 50%;
+		@include crossTransform(translateY(-50%));
+		display: block;
+		height: calc(100% - 4px);
+		width: 16px;
+		border-top: 33px solid transparent;
+		border-bottom: 33px solid transparent;
+	}
+	& .left-triangle {
+		left: 0;
+		border-left: 16px solid rgba(229, 229, 229, 0.5);
+	}
+	& .right-triangle {
+		right: 0;
+		border-right: 16px solid rgba(229, 229, 229, 0.5);
+	}
 }
 
 .btn-blue {
@@ -58,5 +79,26 @@ input[type="submit"] {
 			color: #1d90b5;
 		}
 	}
-	
+}
+
+.btn-white {
+	background-color: #fff;
+	border: 2px solid #fff;
+	color: #1d90b5;
+	&:hover,
+	&:focus {
+		background-color: darken($color: #fff, $amount: 10%);
+		border-color: darken($color: #fff, $amount: 10%);
+		color: #1d90b5;
+	}
+	&.outline {
+		background-color: transparent;
+		color: #fff;
+		&:hover,
+		&:focus {
+			background-color: rgba(0, 0, 0, .1);
+			border-color: darken($color: #fff, $amount: 10%);
+			color: #fff;
+		}
+	}
 }

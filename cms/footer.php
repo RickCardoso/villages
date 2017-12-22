@@ -14,17 +14,57 @@
 	</div><!-- #content -->
 
 	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'villages' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'villages' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'villages' ), 'villages', '<a href="http://github.com/RickCardoso">Rick Cardoso</a>' );
-			?>
-		</div><!-- .site-info -->
+		<div class="page-wrapper">
+
+			<div class="site-info">
+				<div class="logo-link">
+					<a href="<?php echo site_url(); ?>">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/logo_grayscale.png" alt="Villages">
+					</a>
+				</div>
+				<div class="footer-nav">
+					<?php
+						wp_nav_menu( array(
+							'theme_location' 		=> 'menu-1',
+							'menu_id'        		=> 'footer-menu',
+							'container_id'			=> 'footer-navbar',
+							) );
+							?>
+					<div class="legal">
+						<span>&copy; 2017 - Villages</span>
+						<span>Privacy Policy &bullet; Terms of Service</span>
+					</div>
+				</div>
+				<div class="footer-social">
+
+				<?php
+
+				$menu_name = 'menu-2';
+
+				if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) :
+					
+					$menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
+					
+					$menu_items = wp_get_nav_menu_items($menu->term_id); ?>
+				
+					<ul class="social-navbar">
+				
+					<?php foreach ( (array) $menu_items as $key => $menu_item ) : ?>
+
+						<li class="nav-item">
+							<a class="nav-link" href="<?php echo $menu_item->url; ?>"><i class="fab fa-<?php echo $menu_item->title; ?><?php echo ($menu_item->title == 'facebook' ? '-f' : ''); ?>" aria-hidden="true"></i></a>
+						</li>
+
+					<?php endforeach; ?>
+
+					</ul>
+
+				<?php endif; ?>
+
+				</div>
+			</div><!-- .site-info -->
+
+		</div>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 

@@ -6686,7 +6686,7 @@ textarea {
   color: #666;
   border: 1px solid #ccc;
   border-radius: 3px;
-  padding: 3px; }
+  padding: 1em; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -6731,6 +6731,9 @@ a {
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
+#masthead {
+  background-color: #fff; }
+
 .main-navigation .site-branding {
   max-width: 220px;
   width: 100%; }
@@ -6899,6 +6902,9 @@ a {
   max-width: 1230px;
   margin: auto; }
 
+section {
+  padding: 3em 0; }
+
 .sticky {
   display: block; }
 
@@ -6929,6 +6935,64 @@ a {
 /*--------------------------------------------------------------
 ## Modules
 --------------------------------------------------------------*/
+#hero {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #hero .hero-heading {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #fff;
+    font-size: 2.375em;
+    text-transform: uppercase; }
+    #hero .hero-heading img {
+      display: block;
+      margin: 0 auto -30px; }
+    #hero .hero-heading span:first-of-type {
+      margin-left: 1.5em;
+      font-weight: 300; }
+    #hero .hero-heading span:last-of-type {
+      margin-left: 2em;
+      font-weight: 600; }
+
+#sign-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center; }
+  #sign-form #name, #sign-form #password {
+    flex: 1 1 50%;
+    max-width: 274px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.83); }
+  #sign-form .smallprint, #sign-form .btn-wrapper {
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    flex: 0 0 100%; }
+
+#villages-hours .framed-box {
+  border: 3px solid #1695c8;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 3.75em 3em; }
+  #villages-hours .framed-box img {
+    display: block;
+    padding-right: 2em;
+    border-right: 3px solid #eaeaea; }
+  #villages-hours .framed-box p {
+    margin-bottom: 0;
+    padding-left: 1.5em;
+    font-size: 1.25em;
+    color: #b0b0b0; }
+
+#social-graph img,
+#full-cycle img {
+  display: block;
+  margin: auto; }
+
 #join-call {
   padding-top: 4.75em;
   padding-bottom: 3.75em;

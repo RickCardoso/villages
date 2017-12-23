@@ -15,16 +15,17 @@
 
 	<div class="entry-content">
 		
-		<section class="jumbotron jumbotron-fluid" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/jumbo-bg.png');">
+		<section class="jumbotron jumbotron-fluid" id="hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/jumbo-bg.png');">
 			<div class="container">
-				<h1 class="display-3">
+				<h1 class="hero-heading">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/everyone.png" alt="EVERYONE">
 					<span>has value</span>
-					<span><strong>to share!</strong></span>
+					<span>to share!</span>
 				</h1>
-				<form action="">
-					<input type="text" name="email" placeholder="Email">
-					<input type="password" name="password" placeholder="Password">
+				<form action="" id="sign-form">
+					<input id="name" type="text" name="email" placeholder="Email">
+					<div class="mx-0 mx-sm-3"></div>
+					<input id="password" type="password" name="password" placeholder="Password">
 					<p class="smallprint">By clicking Sign Up, I agree to the Terms of Service and Privacy Policy.</p>
 					<div class="btn-wrapper">
 						<a href="#" class="btn-std btn-white">Join Now</a>

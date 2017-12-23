@@ -1,3 +1,79 @@
+#hero {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  & .hero-heading {
+    margin-bottom: 1em;
+    text-align: center;
+    color: #fff;
+    font-size: 2.375em;
+    text-transform: uppercase;
+    & img {
+      display: block;
+      margin: 0 auto -30px;
+    }
+    & span:first-of-type {
+      margin-left: 1.5em;
+      font-weight: 300;
+    }
+    & span:last-of-type {
+      margin-left: 2em;
+      font-weight: 600;
+    }
+  }
+}
+
+#sign-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+  & #name,
+  & #password {
+    flex: 1 1 50%;
+    max-width: 274px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.83);
+  }
+  & .smallprint,
+  & .btn-wrapper {
+    color: #fff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    flex: 0 0 100%;
+  }
+}
+
+#villages-hours {
+  & .framed-box {
+    border: 3px solid #1695c8;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 3.75em 3em;
+    & img {
+      display: block;
+      padding-right: 2em;
+      border-right: 3px solid #eaeaea;
+    }
+    & p {
+      margin-bottom: 0;
+      padding-left: 1.5em;
+      font-size: 1.25em;
+      color: #b0b0b0;
+    }
+  }
+}
+
+#social-graph,
+#full-cycle {
+  & img {
+    display: block;
+    margin: auto;
+  }
+}
+
 #join-call {
   padding-top: 4.75em;
   padding-bottom: 3.75em;

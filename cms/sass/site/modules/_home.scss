@@ -31,17 +31,112 @@
   text-align: center;
   & #name,
   & #password {
+    font-size: 1.125em;
     flex: 1 1 50%;
     max-width: 274px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.83);
   }
+  & .smallprint {
+    margin-top: 2em;
+    font-size: 0.75em;
+  }
   & .smallprint,
   & .btn-wrapper {
     color: #fff;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     flex: 0 0 100%;
+  }
+  & .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    & .btn-std {
+      font-weight: 600;
+      height: 38px;
+      font-size: 0.875em;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 122px;
+      &.outline {
+        border: 2px solid #fff;
+      }
+    }
+  }
+}
+
+#what-they-say {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5em;
+  & .section-title {
+    color: #fff;
+    margin-bottom: 1.5em;
+  }
+  & .testimonial-box {
+    margin-top: 3em;
+    background-color: #fff;
+    @include crossBorder(2px);
+    @include crossShadow(2.1px 2.1px 3px 0 rgba(119, 119, 119, 0.29));
+    position: relative;
+    text-align: center;
+    padding: 3.75em 1.25em 1em;
+    & .testimonial-avatar {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      @include crossTransform(translate(-50%, -50%));
+      display: block;
+      @include crossBorder(50%);
+      @include crossShadow(2.1px 2.1px 3px 0 rgba(0, 0, 0, 0.29));
+    }
+    & .testimonial-content {
+      font-style: italic;
+      color: #5c5c5c;
+      letter-spacing: -0.25px;
+      margin-bottom: 0.75em;
+    }
+    & .testimonial-author {
+      color: #5c5c5c;
+      font-weight: 600;
+      letter-spacing: -0.25px;
+      margin-bottom: 0;
+    }
+    & .testimonial-author-twitter-user {
+      font-size: 0.75em;
+      color: #8b8b8b;
+      letter-spacing: -0.25px;      
+      margin-bottom: 0;
+    }
+  }
+  & .carousel-indicators {
+    bottom: -2.75em;
+    margin-bottom: 0;
+    align-items: center;
+    & li {
+      width: 6px;
+      height: 6px;
+      background-color: #0d1274;
+      @include crossBorder(50%);
+      opacity: 0.5;
+      vertical-align: middle;
+      @include crossTransition(all .3s);
+      &:hover,
+      &:focus {
+        background-color: #fff;
+      }
+      &.active {
+        opacity: 1;
+        background-color: #fff;
+        width: 10px;
+        height: 10px;
+      }
+    }
   }
 }
 

@@ -6466,6 +6466,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 .section-title {
+  margin-bottom: 3em;
   font-size: 1.75em;
   color: #1d90b5; }
   .section-title strong {
@@ -6684,7 +6685,7 @@ input[type="datetime-local"],
 input[type="color"],
 textarea {
   color: #666;
-  border: 1px solid #ccc;
+  border: 1px solid transparent;
   border-radius: 3px;
   padding: 1em; }
   input[type="text"]:focus,
@@ -6703,7 +6704,9 @@ textarea {
   input[type="datetime-local"]:focus,
   input[type="color"]:focus,
   textarea:focus {
-    color: #111; }
+    color: #111;
+    border-color: #1d90b5;
+    outline: none; }
 
 select {
   border: 1px solid #ccc; }
@@ -6903,7 +6906,7 @@ a {
   margin: auto; }
 
 section {
-  padding: 3em 0; }
+  padding: 4em 0; }
 
 .sticky {
   display: block; }
@@ -6962,15 +6965,111 @@ section {
   flex-flow: row wrap;
   text-align: center; }
   #sign-form #name, #sign-form #password {
+    font-size: 1.125em;
     flex: 1 1 50%;
     max-width: 274px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.83); }
+  #sign-form .smallprint {
+    margin-top: 2em;
+    font-size: 0.75em; }
   #sign-form .smallprint, #sign-form .btn-wrapper {
     color: #fff;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
     flex: 0 0 100%; }
+  #sign-form .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; }
+    #sign-form .btn-wrapper .btn-std {
+      font-weight: 600;
+      height: 38px;
+      font-size: 0.875em;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      max-width: 122px; }
+      #sign-form .btn-wrapper .btn-std.outline {
+        border: 2px solid #fff; }
+
+#what-they-say {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 5em; }
+  #what-they-say .section-title {
+    color: #fff;
+    margin-bottom: 1.5em; }
+  #what-they-say .testimonial-box {
+    margin-top: 3em;
+    background-color: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-box-shadow: 2.1px 2.1px 3px 0 rgba(119, 119, 119, 0.29);
+    -moz-box-shadow: 2.1px 2.1px 3px 0 rgba(119, 119, 119, 0.29);
+    box-shadow: 2.1px 2.1px 3px 0 rgba(119, 119, 119, 0.29);
+    position: relative;
+    text-align: center;
+    padding: 3.75em 1.25em 1em; }
+    #what-they-say .testimonial-box .testimonial-avatar {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      display: block;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      -webkit-box-shadow: 2.1px 2.1px 3px 0 rgba(0, 0, 0, 0.29);
+      -moz-box-shadow: 2.1px 2.1px 3px 0 rgba(0, 0, 0, 0.29);
+      box-shadow: 2.1px 2.1px 3px 0 rgba(0, 0, 0, 0.29); }
+    #what-they-say .testimonial-box .testimonial-content {
+      font-style: italic;
+      color: #5c5c5c;
+      letter-spacing: -0.25px;
+      margin-bottom: 0.75em; }
+    #what-they-say .testimonial-box .testimonial-author {
+      color: #5c5c5c;
+      font-weight: 600;
+      letter-spacing: -0.25px;
+      margin-bottom: 0; }
+    #what-they-say .testimonial-box .testimonial-author-twitter-user {
+      font-size: 0.75em;
+      color: #8b8b8b;
+      letter-spacing: -0.25px;
+      margin-bottom: 0; }
+  #what-they-say .carousel-indicators {
+    bottom: -2.75em;
+    margin-bottom: 0;
+    align-items: center; }
+    #what-they-say .carousel-indicators li {
+      width: 6px;
+      height: 6px;
+      background-color: #0d1274;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      opacity: 0.5;
+      vertical-align: middle;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      #what-they-say .carousel-indicators li:hover, #what-they-say .carousel-indicators li:focus {
+        background-color: #fff; }
+      #what-they-say .carousel-indicators li.active {
+        opacity: 1;
+        background-color: #fff;
+        width: 10px;
+        height: 10px; }
 
 #villages-hours .framed-box {
   border: 3px solid #1695c8;

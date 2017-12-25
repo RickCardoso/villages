@@ -9,14 +9,23 @@
 
 ?>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php villages_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		
-		<section class="jumbotron jumbotron-fluid" id="hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/jumbo-bg.png');">
-			<div class="container">
+		<section class="jumbotron jumbotron-fluid mb-0" id="hero" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/jumbo-bg.png');">
+			<div class="container text-center">
 				<h1 class="hero-heading">
 					<img src="<?php echo get_template_directory_uri(); ?>/img/everyone.png" alt="EVERYONE">
 					<span>has value</span>
@@ -28,9 +37,9 @@
 					<input id="password" type="password" name="password" placeholder="Password">
 					<p class="smallprint">By clicking Sign Up, I agree to the Terms of Service and Privacy Policy.</p>
 					<div class="btn-wrapper">
-						<a href="#" class="btn-std btn-white">Join Now</a>
+						<a href="#" class="btn-std btn-white mr-0 mr-sm-4">Join Now</a>
 						<input class="btn-std btn-white outline" type="submit" value="Login">
-						<a href="#">Login with facebook</a>
+						<div class="fb-login-button" data-width="179" data-max-rows="1" data-size="large" data-button-type="login_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
 					</div>
 				</form>
 				<a href="#how-it-works">
@@ -85,7 +94,7 @@
 			</div>
 		</section>
 		
-		<section id="what-they-say">
+		<section id="what-they-say" style="background-image: url('<?php echo get_template_directory_uri(); ?>/img/testimonials-bg.png');">
 			<div class="page-wrapper">
 				<div class="padded-container">
 					<h2 class="section-title">What they say <strong>about Villages</strong></h2>
@@ -95,6 +104,7 @@
 							<li data-target="#testimonial-carousel" data-slide-to="0" class="active"></li>
 							<li data-target="#testimonial-carousel" data-slide-to="1"></li>
 							<li data-target="#testimonial-carousel" data-slide-to="2"></li>
+							<li data-target="#testimonial-carousel" data-slide-to="3"></li>
 						</ol>
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
@@ -210,14 +220,6 @@
 								</div>
 							</div>
 						</div>
-						<a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a>
-						<a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
 					</div>
 				</div>
 			</div>

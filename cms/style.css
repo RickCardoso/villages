@@ -6466,11 +6466,17 @@ h1, h2, h3, h4, h5, h6 {
   clear: both; }
 
 .section-title {
-  margin-bottom: 3em;
+  margin-bottom: 0.5em;
   font-size: 1.75em;
   color: #1d90b5; }
   .section-title strong {
     font-weight: 600; }
+
+.section-subtitle {
+  margin-bottom: 3em;
+  font-size: 1.125em;
+  color: #7d7d7d;
+  max-width: 270px; }
 
 p {
   margin-bottom: 1.5em; }
@@ -6566,6 +6572,15 @@ figure {
 table {
   margin: 0 0 1.5em;
   width: 100%; }
+
+.v-div {
+  height: 120px;
+  margin: 0 1em;
+  width: 3px;
+  background-color: #eaeaea; }
+  @media (max-width: 767px) {
+    .v-div {
+      display: none; } }
 
 /*--------------------------------------------------------------
 # Forms
@@ -6905,6 +6920,9 @@ a {
   max-width: 1230px;
   margin: auto; }
 
+.padded-container {
+  padding: 0 15px; }
+
 section {
   padding: 4em 0; }
 
@@ -6995,6 +7013,14 @@ section {
       #sign-form .btn-wrapper .btn-std.outline {
         border: 2px solid #fff; }
 
+#how-it-works .section-title {
+  margin-bottom: 2.5em; }
+#how-it-works .flow-wrapper {
+  margin-top: 1em;
+  text-align: center; }
+  #how-it-works .flow-wrapper img {
+    padding-left: 18px; }
+
 #what-they-say {
   background-position: center;
   background-repeat: no-repeat;
@@ -7002,9 +7028,9 @@ section {
   padding-bottom: 5em; }
   #what-they-say .section-title {
     color: #fff;
-    margin-bottom: 1.5em; }
+    margin-bottom: 1em; }
   #what-they-say .testimonial-box {
-    margin-top: 3em;
+    margin-top: 4em;
     background-color: #fff;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
@@ -7049,7 +7075,8 @@ section {
   #what-they-say .carousel-indicators {
     bottom: -2.75em;
     margin-bottom: 0;
-    align-items: center; }
+    align-items: center;
+    height: 10px; }
     #what-they-say .carousel-indicators li {
       width: 6px;
       height: 6px;
@@ -7071,21 +7098,28 @@ section {
         width: 10px;
         height: 10px; }
 
-#villages-hours .framed-box {
-  border: 3px solid #1695c8;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 3.75em 3em; }
-  #villages-hours .framed-box img {
-    display: block;
-    padding-right: 2em;
-    border-right: 3px solid #eaeaea; }
-  #villages-hours .framed-box p {
-    margin-bottom: 0;
-    padding-left: 1.5em;
-    font-size: 1.25em;
-    color: #b0b0b0; }
+#villages-hours {
+  background-color: #f6f6f6; }
+  #villages-hours .framed-box {
+    border: 3px solid #1695c8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 3.75em 3em; }
+    #villages-hours .framed-box img {
+      display: block; }
+    #villages-hours .framed-box p {
+      margin-bottom: 0;
+      font-size: 1.25em;
+      color: #b0b0b0;
+      flex: 0 0 60%; }
+
+#social-graph {
+  background-image: url("img/social-graph-bg.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center; }
 
 #social-graph img,
 #full-cycle img {

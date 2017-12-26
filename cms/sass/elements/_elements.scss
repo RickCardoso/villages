@@ -31,3 +31,13 @@ figure {
 }
 
 @import "tables";
+
+.v-div {
+	height: 120px;
+	margin: 0 1em;
+	width: 3px;
+	background-color: #eaeaea;
+	@include media-width-down(sm) {
+		display: none;
+	}
+}

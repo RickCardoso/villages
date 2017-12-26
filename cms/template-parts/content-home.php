@@ -53,37 +53,37 @@
 				<div class="padded-container">
 					<h2 class="section-title">How <strong>it works</strong></h2>
 					<div class="row">
-						<div class="col-2">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 							<div class="flow-wrapper">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/flow-1.png" alt="">
 								<p class="caption">Sign Up</p>
 							</div>
 						</div>
-						<div class="col-2">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 							<div class="flow-wrapper">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/flow-2.png" alt="">
 								<p class="caption">Create Profile</p>
 							</div>
 						</div>
-						<div class="col-2">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 							<div class="flow-wrapper">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/flow-3.png" alt="">
 								<p class="caption">Post an Ad</p>
 							</div>
 						</div>
-						<div class="col-2">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 							<div class="flow-wrapper">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/flow-4.png" alt="">
 								<p class="caption">Extend your web of trust by inviting and endorsing your friends</p>
 							</div>
 						</div>
-						<div class="col-2">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 							<div class="flow-wrapper">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/flow-5.png" alt="">
 								<p class="caption">Send credit (IOU's) to those who trust you</p>
 							</div>
 						</div>
-						<div class="col-2">
+						<div class="col-12 col-sm-6 col-md-4 col-lg-2">
 							<div class="flow-wrapper">
 								<img src="<?php echo get_template_directory_uri(); ?>/img/flow-6.png" alt="">
 								<p class="caption">Accept payments from others, to balance your credit</p>
@@ -109,7 +109,7 @@
 						<div class="carousel-inner" role="listbox">
 							<div class="carousel-item active">
 								<div class="row">
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-1.png" alt="user-1">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -117,7 +117,7 @@
 											<p class="testimonial-author-twitter-user">@leoherrera</p>
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-2.png" alt="user-2">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -125,7 +125,7 @@
 											<p class="testimonial-author-twitter-user">@leoherrera</p>
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-3.png" alt="user-3">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -137,7 +137,7 @@
 							</div>
 							<div class="carousel-item">
 								<div class="row">
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-1.png" alt="user-1">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -145,7 +145,7 @@
 											<p class="testimonial-author-twitter-user">@leoherrera</p>
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-2.png" alt="user-2">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -153,7 +153,7 @@
 											<p class="testimonial-author-twitter-user">@leoherrera</p>
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-3.png" alt="user-3">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -165,7 +165,7 @@
 							</div>
 							<div class="carousel-item">	
 								<div class="row">
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-1.png" alt="user-1">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -173,7 +173,7 @@
 											<p class="testimonial-author-twitter-user">@leoherrera</p>
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-2.png" alt="user-2">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -181,7 +181,7 @@
 											<p class="testimonial-author-twitter-user">@leoherrera</p>
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-3.png" alt="user-3">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -193,7 +193,7 @@
 							</div>
 							<div class="carousel-item">	
 								<div class="row">
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-1.png" alt="user-1">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -201,7 +201,7 @@
 											<p class="testimonial-author-twitter-user">@leoherrera</p>
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-2.png" alt="user-2">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -209,7 +209,7 @@
 											<p class="testimonial-author-twitter-user">@leoherrera</p>
 										</div>
 									</div>
-									<div class="col-4">
+									<div class="col-12 col-sm-6 col-md-4">
 										<div class="testimonial-box">
 											<img class="testimonial-avatar" src="<?php echo get_template_directory_uri(); ?>/img/avatar-3.png" alt="user-3">
 											<p class="testimonial-content">“Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.”</p>
@@ -229,7 +229,7 @@
 			<div class="page-wrapper">
 				<div class="padded-container">
 					<h2 class="section-title"><strong>Full cycle</strong> of credit</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+					<p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/full-cycle.png" alt="">
 				</div>
 			</div>
@@ -239,17 +239,19 @@
 			<div class="page-wrapper">
 				<div class="padded-container">
 					<h2 class="section-title"><strong>Villages Hours</strong></h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
+					<p class="section-subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
 					<div class="row">
 						<div class="col-12 col-sm-6">
 							<div class="framed-box">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/box-1.png" alt="">
+								<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/box-1.png" alt="">
+								<div class="v-div"></div>
 								<p>We use Village Hours, backed by a sustainable hour’s wage. In our community, there is a general consensus that this is equivalent to $15.</p>
 							</div>
 						</div>
 						<div class="col-12 col-sm-6">
 							<div class="framed-box">
-								<img src="<?php echo get_template_directory_uri(); ?>/img/box-2.png" alt="">
+								<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/img/box-2.png" alt="">
+								<div class="v-div"></div>
 								<p>This is an effective and useful complementary currency system that can be used anywhere in the world.</p>
 							</div>
 						</div>
@@ -262,7 +264,7 @@
 			<div class="page-wrapper">
 				<div class="padded-container">
 					<h2 class="section-title"><strong>Social</strong> Graph</h2>
-					<p>Create your own financial network and watch your web of trust expand.</p>
+					<p class="section-subtitle">Create your own financial network and watch your web of trust expand.</p>
 					<img src="<?php echo get_template_directory_uri(); ?>/img/social-graph.png" alt="social-graph">
 				</div>
 			</div>

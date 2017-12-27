@@ -203,3 +203,85 @@ ol.custom-breadcrumbs {
     font-size: 0.8em;
   }
 }
+
+#masthead {
+  background-color: #fff;
+  
+  .main-navigation {
+    & .site-branding {
+      max-width: 220px;
+      width: 100%;
+    }
+    & .navbar {
+      height: 100px;
+      padding: 0.5em 15px;
+      & .btn-std {
+        margin-left: 13px;
+        height: 38px;
+        width: 122px;
+        &.btn-blue:not(.outline) {
+          @include crossShadow(3.2px 3.2px 18px 0 rgba(119, 119, 119, 0.35));
+          &:active {
+            @include crossShadow(none);
+          }
+        }
+      }
+      @include media-width-down(lg) {
+  
+      }
+    }
+  }
+  
+  #primary-navbar,
+  #social-navbar {
+    height: 100%;
+    & ul {
+      margin-left: 0;
+      height: 100%;
+      & li {
+        font-size: 0.875em;
+        font-weight: 600;
+        height: 100%;
+          & a {
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0 1em;
+          color: #8d8d8d;
+          &:hover,
+          &:focus {
+            text-decoration: none;
+            color: #1d90b5;					
+          }
+        }
+      }
+    }
+  }
+  
+  #primary-navbar {
+    flex: 1;
+    justify-content: flex-end;
+  }
+  
+  #social-navbar {
+    flex: 0 0 auto;
+    justify-content: center;
+    padding: 0 1em;
+    font-size: 1.375rem;
+    & ul {
+      & li {
+        & a {
+          padding: 0 0.75em;
+          color: #000;
+          opacity: 0.2;
+          &:hover,
+          &:focus {
+            opacity: 1;
+            color: #1d90b5;
+          }
+        }
+      }
+    }
+  }
+}

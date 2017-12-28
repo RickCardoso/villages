@@ -1,0 +1,35 @@
+.page-wrapper {
+	max-width: 1230px;
+	margin: auto;
+}
+
+.padded-container {
+	padding: 0 15px;
+}
+
+section {
+	padding: 4em 0;
+}
+
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0;
+}
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}

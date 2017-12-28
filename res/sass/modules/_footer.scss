@@ -11,6 +11,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-flow: row wrap;
     & .logo-link {
       flex: 0 0 auto;
       & a {
@@ -90,6 +91,48 @@
         }
       }
     }
+    @include media-width-down(sm) {
+      & .logo-link {
+        & img {
+          max-width: 80px;
+        }
+      }
+    }
+    @include media-width-down(xs) {
+      & .logo-link {
+        flex: 0 0 100%;
+        margin-bottom: 0.5em;
+        & a {
+          text-align: center;
+        }
+      }
+      & .footer-nav {
+        margin-bottom: 1.5em;
+        flex: 0 0 100%;
+      }
+      & .footer-social {
+        flex: 0 0 100%;
+        & .social-navbar {
+          justify-content: center;
+          & li,
+          & li:not(:first-of-type) {
+            margin: 0 1em;
+          }
+        }
+      }
+    }
+    @include media-width-down(xxs) {
+      & .footer-nav {
+        margin-bottom: 2.5em;
+        & .legal {
+          flex-flow: row wrap;
+          & span {
+            text-align: center;
+            flex: 0 0 100%;
+          }
+        }
+      }
+    }        
   }
 }
 

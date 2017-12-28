@@ -6904,13 +6904,31 @@ ol.custom-breadcrumbs {
     ol.custom-breadcrumbs {
       font-size: 0.8em; } }
 
+.bg-menu-overlay {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 25;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s; }
+  .bg-menu-overlay.show {
+    display: block;
+    opacity: 1; }
+
 #masthead {
   background-color: #fff; }
   #masthead .main-navigation .site-branding {
     max-width: 220px;
     width: 100%; }
   #masthead .main-navigation .navbar {
-    height: 100px;
+    min-height: 100px;
     padding: 0.5em 15px; }
     #masthead .main-navigation .navbar .btn-std {
       margin-left: 13px;
@@ -6924,6 +6942,27 @@ ol.custom-breadcrumbs {
           -webkit-box-shadow: none;
           -moz-box-shadow: none;
           box-shadow: none; }
+    @media (max-width: 1199px) {
+      #masthead .main-navigation .navbar {
+        min-height: 80px; }
+        #masthead .main-navigation .navbar .site-branding {
+          max-width: 180px; } }
+    @media (max-width: 991px) {
+      #masthead .main-navigation .navbar {
+        min-height: 60px;
+        padding: 0.5em 0.25em; }
+        #masthead .main-navigation .navbar .site-branding {
+          max-width: 120px; } }
+    @media (max-width: 767px) {
+      #masthead .main-navigation .navbar {
+        padding: 0.5em 0 0; }
+        #masthead .main-navigation .navbar .btn-std {
+          margin-top: 0.5em;
+          margin-left: 0;
+          -webkit-border-radius: 0;
+          -moz-border-radius: 0;
+          border-radius: 0;
+          flex: 0 0 50%; } }
   #masthead #primary-navbar,
   #masthead #social-navbar {
     height: 100%; }
@@ -6952,6 +6991,42 @@ ol.custom-breadcrumbs {
   #masthead #primary-navbar {
     flex: 1;
     justify-content: flex-end; }
+    #masthead #primary-navbar ul {
+      flex-flow: row wrap; }
+    @media (max-width: 991px) {
+      #masthead #primary-navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        -webkit-transform: translateX(-100%);
+        -moz-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+        z-index: 30;
+        background-color: #fff;
+        max-width: 240px;
+        height: 100vh;
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+        display: flex;
+        align-items: flex-start; }
+        #masthead #primary-navbar ul {
+          height: auto; }
+          #masthead #primary-navbar ul li {
+            flex: 0 0 100%;
+            height: auto; }
+            #masthead #primary-navbar ul li a {
+              padding: 1em 2em;
+              justify-content: flex-start; }
+        #masthead #primary-navbar.show {
+          -webkit-transform: translateX(0);
+          -moz-transform: translateX(0);
+          -ms-transform: translateX(0);
+          -o-transform: translateX(0);
+          transform: translateX(0); } }
   #masthead #social-navbar {
     flex: 0 0 auto;
     justify-content: center;
@@ -6964,6 +7039,12 @@ ol.custom-breadcrumbs {
       #masthead #social-navbar ul li a:hover, #masthead #social-navbar ul li a:focus {
         opacity: 1;
         color: #1d90b5; }
+    @media (max-width: 767px) {
+      #masthead #social-navbar {
+        flex: 1 0 40%;
+        padding: 0; }
+        #masthead #social-navbar ul {
+          justify-content: flex-end; } }
 
 /* headings */
 h1, h2, h3, h4, h5, h6 {
@@ -7011,7 +7092,8 @@ p {
     padding-right: 15px;
     display: flex;
     justify-content: flex-start;
-    align-items: center; }
+    align-items: center;
+    flex-flow: row wrap; }
     .site-footer .site-info .logo-link {
       flex: 0 0 auto; }
       .site-footer .site-info .logo-link a {
@@ -7076,6 +7158,32 @@ p {
             .site-footer .site-info .footer-social .social-navbar li a:hover, .site-footer .site-info .footer-social .social-navbar li a:focus {
               text-decoration: none;
               opacity: 1; }
+    @media (max-width: 767px) {
+      .site-footer .site-info .logo-link img {
+        max-width: 80px; } }
+    @media (max-width: 575px) {
+      .site-footer .site-info .logo-link {
+        flex: 0 0 100%;
+        margin-bottom: 0.5em; }
+        .site-footer .site-info .logo-link a {
+          text-align: center; }
+      .site-footer .site-info .footer-nav {
+        margin-bottom: 1.5em;
+        flex: 0 0 100%; }
+      .site-footer .site-info .footer-social {
+        flex: 0 0 100%; }
+        .site-footer .site-info .footer-social .social-navbar {
+          justify-content: center; }
+          .site-footer .site-info .footer-social .social-navbar li, .site-footer .site-info .footer-social .social-navbar li:not(:first-of-type) {
+            margin: 0 1em; } }
+    @media (max-width: 413px) {
+      .site-footer .site-info .footer-nav {
+        margin-bottom: 2.5em; }
+        .site-footer .site-info .footer-nav .legal {
+          flex-flow: row wrap; }
+          .site-footer .site-info .footer-nav .legal span {
+            text-align: center;
+            flex: 0 0 100%; } }
 
 .footer-nav {
   text-align: center; }
@@ -7092,29 +7200,47 @@ p {
     text-transform: uppercase; }
     #hero .hero-heading img {
       display: block;
-      margin: 0 auto -30px; }
+      margin: 0 auto -0.78em; }
     #hero .hero-heading span:first-of-type {
       margin-left: 1.5em;
       font-weight: 300; }
     #hero .hero-heading span:last-of-type {
       margin-left: 2em;
       font-weight: 600; }
+  @media (max-width: 767px) {
+    #hero {
+      font-size: 0.9em; } }
+  @media (max-width: 575px) {
+    #hero {
+      font-size: 0.7em; }
+      #hero .hero-heading img {
+        margin-bottom: -0.5em; } }
+  @media (max-width: 413px) {
+    #hero {
+      font-size: 0.6em; } }
 
 #sign-form {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  text-align: center; }
+  text-align: center;
+  padding: 0 15px; }
   #sign-form #name, #sign-form #password {
-    font-size: 1.125em;
+    font-size: 1.125rem;
     flex: 1 1 50%;
     max-width: 274px;
     height: 44px;
     background-color: rgba(255, 255, 255, 0.83); }
+    @media (max-width: 767px) {
+      #sign-form #name, #sign-form #password {
+        font-size: 1rem;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0.75em; } }
   #sign-form .smallprint {
     margin-top: 2em;
-    font-size: 0.75em; }
+    font-size: 0.75rem; }
   #sign-form .smallprint, #sign-form .btn-wrapper {
     color: #fff;
     margin-bottom: 2em;
@@ -7127,13 +7253,14 @@ p {
     #sign-form .btn-wrapper .btn-std {
       font-weight: 600;
       height: 38px;
-      font-size: 0.875em;
+      font-size: 0.875rem;
       padding: 0;
       display: flex;
       justify-content: center;
       align-items: center;
       width: 100%;
-      max-width: 122px; }
+      max-width: 122px;
+      text-transform: none; }
       #sign-form .btn-wrapper .btn-std.outline {
         border: 2px solid #fff; }
 
@@ -7230,14 +7357,35 @@ p {
     justify-content: space-between;
     align-items: center;
     flex-flow: row wrap;
-    padding: 3.75em 3em; }
+    padding: 3.75em 3em;
+    height: 100%; }
     #villages-hours .framed-box img {
-      display: block; }
+      display: block;
+      flex: 0; }
     #villages-hours .framed-box p {
+      flex: 1;
       margin-bottom: 0;
       font-size: 1.25em;
       color: #b0b0b0;
       flex: 0 0 60%; }
+    @media (max-width: 1199px) {
+      #villages-hours .framed-box {
+        font-size: 0.9em; }
+        #villages-hours .framed-box img {
+          max-width: 7.5em; } }
+    @media (max-width: 991px) {
+      #villages-hours .framed-box {
+        font-size: 0.75em; } }
+    @media (max-width: 820px) {
+      #villages-hours .framed-box {
+        justify-content: center;
+        align-items: flex-start;
+        text-align: center; }
+        #villages-hours .framed-box .v-div {
+          display: none; }
+        #villages-hours .framed-box p {
+          padding-top: 1em;
+          flex: 0 0 100%; } }
 
 #social-graph {
   background-image: url("../img/home/social-graph-bg.png");
